@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Digital Combat Simulator Review</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+	<style>
+		a.back-to-top {
+		display: none;
+		width: 60px;
+		height: 60px;
+		text-indent: -9999px;
+		position: fixed;
+		z-index: 999;
+		right: 20px;
+		bottom: 20px;
+		background: #27AE61 url("up-arrow.png") no-repeat center 43%;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		}
+    
+    
+    </style>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+    <script type="text/javascript">
+	
+
+		
+				//This is to enable the visibility of the floating back-to-top button
+				
+				
+				function onoffloatbtn(){
+				
+				//alert("running onoffbtn")
+				
+					var amountScrolled = 200;
+				
+					$(window).scroll(function() {
+						if ( $(window).scrollTop() > amountScrolled ) {
+							$('a.back-to-top').fadeIn('slow');
+							console.log(">amountscrolled");
+						} else {
+							$('a.back-to-top').fadeOut('slow');
+							console.log("<amountscrolled");
+						}
+					});
+
+				}
+				
+				setTimeout("onoffloatbtn()",500);
+	
+	//This is the function called when the floating button is clicked
+	$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//to enable smooth-scrolling button
+	
+	//$( document ).ready(function() {
+		//alert("ready");		
+		function goTo(idName){
+			console.log( "clickDetected" );
+			//alert("hi"+idName);
+			var aTag = $("a[name='"+ idName +"']");
+			var aTag = $("#"+idName)
+			$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+		}
+		
+    
+
+	//);
+	
+	function thisBig(picNum) {
+		$("#myCarousel3").carousel(picNum);
+	};
+	
+	</script>
+	
+</head>
+
+<body>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://www.comp.nus.edu.sg/~A0125940/page2.html">About and Gallery</a>
+                     </li>
+                    <li>
+                         <a href="#">Back To Top</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">External Links<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.digitalcombatsimulator.com/en/">DCS Official Website</a></li>
+                            <li><a href="http://store.steampowered.com/app/223750/">DCS On Steam Store</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name=""></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Digital Combat Simulator Review</h1>
+                        <h3>By: Harrison Teo</h3>
+                        <hr class="intro-divider">
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>                        
+                    </div>
+                    
+                    <!--<a href="#ShortReview" class="btn btn-circle page-scroll">-->
+                    	<a href="#" onClick="goTo('ShortReview')"> 
+                        	<i id="review1" class="fa fa-angle-double-down faa-vertical animated fa-3x"></i>
+                        </a>
+                    <!--</a>-->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+<section id="ShortReview" class="container content-section text-center">
+	<a  name="services"></a>
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    
+                       <h2 class="section-heading">What is it?</h2>
+                       <p class="lead">Digital Combat Simulator World or DCS World is a combat flight simulator for PC developed by Eagle Dynamics. It is a free-to-play digital battlefield game that focusses on simulation of military aircraft. Included in the free version of the game are the Su-25T and the TF-51D aircraft. Additional aircraft and maps are available for purchase as separate DCS modules <a href="http://www.digitalcombatsimulator.com/en/shop/">here</a>.</p>
+                    
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                        <!-- Start Carousel here -->
+                       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img src="imgforwebsite/su-27.jpg" alt="Su-27" width="1920" height="1080">
+                                <!-- Caption for image -->
+                                <div class="carousel-caption">
+                                <h4>Su-27 popping flares</h4>
+                                </div>
+                                <!-- End of caption for image -->
+                          </div>
+                    
+                          
+                    
+                          <div class="item">
+                            <img src="imgforwebsite/a10cformation2.jpg" alt="a10cformation2" width="1920" height="1080">
+                                <!-- Caption for image -->
+                                <div class="carousel-caption">
+                                <h4>A-10C in formation</h4>
+                                </div>
+                                <!-- End of caption for image -->
+                          </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+              		<!-- End Carousel here -->
+                </div>
+            </div>
+
+        </div>
+       </div>
+</section>
+        <!-- /.container -->
+
+    
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">The Good...</h2>
+                    <ul>
+                      <li><strong>Tutorials are provided to familiarise those with no knowledge of flight simulations</strong><br>
+                      </li>
+                      <li style="font-size: 18px; font-weight: 400;">
+                   	  Aircraft are highly modelled </li>
+                      <li style="font-size: 18px; font-weight: 400;">
+                   	  Option to create your own missions and campaigns
+                      </li>
+                       <li style="font-size: 18px; font-weight: 400;">
+                   	   Community support is decent
+                      </li>
+                       <li><span style="font-size: 18px; font-weight: 400;">
+                   	   Highly realistic</span><span style="font-size: 12px"></span> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <!-- Start Carousel here -->
+                       <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel2" data-slide-to="1"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img src="imgforwebsite/a10cformation.jpg" alt="a10cformation" width="1920" height="1080">
+                                <!-- Caption for image -->
+                                <div class="carousel-caption">
+                                <h4>A-10C in formation</h4>
+                                </div>
+                                <!-- End of caption for image -->
+                          </div>
+                        
+                          <div class="item">
+                            <img src="imgforwebsite/dusksu-27.jpg" alt="Dusk Su-27" width="1920" height="1080">
+                                <!-- Caption for image -->
+                                <div class="carousel-caption">
+                                <h4>Su-27 landing in dusk</h4>
+                                </div>
+                                <!-- End of caption for image -->
+                          </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+              		<!-- End Carousel here -->
+                  </div>
+                </div>
+
+           </div>
+        <!-- /.container -->
+
+       </div>
+   </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">the Bad...</h2>
+                    <ul>
+                      <li><strong>Requires a relatively modern computer to run</strong><br>
+                      </li>
+                      <li style="font-size: 18px; font-weight: 400;">
+                   	  Requires appropriate peripherals for optimal experience (see insert)</li>
+                      <li style="font-size: 18px; font-weight: 400;">
+                   	  Aircraft are sold as seperate downloadable content
+                      </li>
+                       <li style="font-size: 18px; font-weight: 400;">
+                   	   Very steep learning curve
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="imgforwebsite/hotaswarthog.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<a  name="contact"></a>
+    <div class="banner">
+    </div>
+    
+    
+      <div class="container">
+
+         <div class="row">
+             
+          <h2>Full length Review</h2>
+           <p>Digital Combat Simulator World or DCS World is a combat flight simulator for PC developed by Eagle Dynamics. It is a free-to-play digital battlefield game that focusses on simulation of military aircraft. Included in the free version of the game are the Su-25T and the TF-51D aircraft. Additional aircraft and maps are available for purchase as separate DCS modules here.
+The free version of DCS World spans the Caucasus region that encompasses Georgia and parts of Russia during the Russian invasion of Georgia in 2008. Due to its sandbox style approach to flight simulators, missions and campaigns can be designed by the community to provide high-fidelity recreations of historical battles.
+			</p>
+
+           <p>
+                 When playing this simulator, one of the things to note is that it is NOT an arcade shooter; the DCS: A-10C Warthog module is a consumer version of the trainer version developed for the Air National Guard, U.S. Air Force, and Reserves. Players have to face a steep learning curve in the beginning but the reward for those who do manage to get past the initial phase of this simulator is beyond anything other games can offer. For starters, it is not recommended to play DCS World with a mouse and keyboard; it is a recipe for frustration. A game controller will make the experience better, but not by much. What you need is at the very least a joystick, or better: a HOTAS (Hands on Throttle-and-Stick). Due to the plethora of commands that are required to be at your fingertips, such as speedbrake, flaps, weapons and countermeasures, a controller with the number of buttons to match can make the difference between nailing a landing or ending in a fiery explosion.
+           </p>
+           <h3>
+               	 Tutorials
+           </h3>
+           <p>
+                A key features of this simulator is that there are tutorials designed to help you familiarise with the cockpit and controls of the aircraft. The tutorial for the A-10C warthog includes cockpit familiarisation, aircraft start-up and shutdown, basic flying, landing and combat employment, all with voice-overs and cue boxes to facilitate learning. However, it takes time and practise for each of the tutorial lessons to sink in. It should come as no surprise that players may need to repeat the same tutorial over five times just to get the hang of deploying a bomb. For instance, dropping the CBU-97 cluster bomb at a group of tanks is already serious business. Select the bomb on the Digital Stores Management System (DSMS) to make it the active weapon, set up release parameters (such as ripple settings, time of fall, minimum altitude, eject velocity, escape manoeuvre, etc.) cycle master mode to CCIP (Constantly Computed Impact Point) bombing enter a 30 to 45 degree dive towards the target, and release the bomb when the CCIP pipper in the HUD superimposes on the target point. But it does not just end there, as there will be return fire from the ground targets and the attack run may have to be aborted for safety reasons.
+            </p>
+            <h3>
+                  Aircraft models
+            </h3>
+           <p>
+                Although new pilot will frequently get hit by enemies often, getting hit is not necessarily the end of the mission as some airplanes like the A-10C can withstand quite a beating even from a missile. This leads me to the modelling of the aircraft in the simulator. Most of the aircraft in DCS are intricately detailed and their damage models are incredibly realistic. For example, getting the right engine hit by gun fire will cause it to be on fire. This leads to engine failure and shutting down of the systems and hydraulics that are dependent on the right engine. For a novice pilot, it may be the end of the flight, but for a veteran, that's hardly the end. The A-10C is equipped with a fire extinguisher system to put out engine fires mid-flight and is designed to be able to fly with one of its two engines operational. All these details are modelled into the simulator and the most rewarding experiences come from performing a seemingly impossible maneuverer such as landing a crippled plane. Due to the high-fidelity of the simulator, preparation before embarking on mission is vital for survival and ensuring its completion.
+             </p>
+             <h3>
+                  Mission and Campaigns
+             </h3>
+           	 <p>Missions and campaigns are developed specifically for each aircraft modules and all of them tap on the specific strengths of each aircraft. For example, for the Russian Su-25T aircraft included in the free version, there are missions where players have to search and destroy enemy radars while avoid getting into air-to-air combat, as the aircraft was originally designed by the Russian Airforce for air-to-ground combat with limited air-to-air capability. Although most of the missions are randomly generated, they are follow-ups of the previous successful missions. For example, a mission might involve providing aerial support to ground forces as they advance to their destination at dusk, and the next mission could be to demolish a bridge during the night to halt the advance of the enemy.
+             </p>
+             
+            
+			 <p>The missions and campaigns in DCS can be compared to an impromptu test of your understanding of the systems and capabilities of the aircraft. Some missions may include briefings that leave out certain details such as the locations of surface-to-air missiles (that may attempt to shoot you down), leaving you to utilise the systems of the aircraft to approximate the locations of these threats and to destroy or avoid them altogether. Other missions may involve communicating with a ground controller called Joint Terminal Attack Controller (JTAC) who assigns targets to you either by coordinates, infra-red, or with a white phosphorous smoke. Such missions require knowledge of how to interpret the jargon (called 9-line) used by the JTAC, to enter coordinates into the aircraft’s systems or how to use the night-vision goggles to spot the infra-red beam sent from the JTAC. This integration of military jargon and aircraft system usage, accompanied with the need to improvise during missions make succeeding in missions extremely challenging and off-putting to beginners. Not to mention that some missions require you to start the aircraft all by yourself.
+			 </p>
+             
+             <h3>
+             	What needs to be improved?
+             </h3>
+			 <p>
+             	  DCS is a serious flight simulator and most flight simulators generally feel cumbersome and uninviting to beginners. Compared with other flight simulators such as X-plane 10, DCS seems to be better optimised and sports better user interface and menus. However, much can be streamlined to provide a more immersive experience. Radio communications with certain airports and JTAC can be confusing at times as the delay before they respond can be quite long (assuming all communication systems on the aircraft are working), leading one to believe that there may be some minor bugs. Radio communication, though present is rather simplified and can be puzzling at times as the information provided may not coincide with actual the actual events that are happening. For example, the air traffic controller may inform you that the runway is clear and you are cleared for take-off, but there may be an aircraft already landing on the same runway.
+             </p>
+             
+              <p> 
+              	   Although there are tutorials provided for each aircraft, most of the tutorials are too basic, requiring serious simmers to refer to external references such as videos on YouTube, reading forums or even documents such as manuals and references from military instructions to truly learn and appreciate a particular aircraft.
+			 </p>
+             
+             <h2>
+             	Conclusion
+             </h2>
+             <p>
+             	DCS is a highly detailed flight simulator that is catered for a niche market. It has 3 deterrence layers   to differentiate enthusiasts from the casual players. It requires modern hardware, appropriate peripherals that are by no means cheap, and has a steep learning curve. Once you get past those phases, DCS is a truly enjoyable flight simulator with a great attention to detail.
+             </p>
+            
+             <hr>
+             <br/>
+             <div class="well well-lg" style="border-width:3px">
+                 <h3>Minimum system requirements:</h3>
+                 <ul>
+                    <li>OS: 64-bit Windows 7/8/10, DirectX11</li>
+                    <li>CPU: Core i3</li>
+                    <li>RAM: 8 GB</li>
+                    <li>Free hard disk space: 30 GB</li>
+                    <li>Graphics Card: 2 GB RAM card, DirectX11 - compatible</li>
+                    <li>Requires internet activation</li>
+                  </ul>
+              
+
+                 <h3>Recommended system requirements: </h3>
+                 <ul>
+                    <li>OS 64-bit Windows 7/8/10, DirectX11</li>
+                    <li>CPU: Core i5+</li>
+                    <li>RAM: 16GB</li>
+                    <li>Hard disk space: 30 GB</li>
+                    <li>Graphics Card: NVIDIA GeForce GTX780 / ATI R9 290 DirectX11 or better</li>
+                    <li>Joystick</li>
+                    <li>Requires internet activation</li>
+                </ul>
+              </div>
+            
+            
+         </div>
+         
+      </div> 
+      
+      
+      
+    <div class="container" align="center">
+         <ul class="pagination">
+          <li class="active"><a href="#">Page 1</a></li>
+          <li><a href="http://www.comp.nus.edu.sg/~A0125940/page2.html">Page 2</a></li>
+         </ul>
+    </div>  
+    
+    
+    
+    
+      
+    <!--This is the floating back-to-top button. Starts off as invisible-->
+    <a title="Go to Top" href="#" class="back-to-top">Back to Top</a>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	
+</body>
+
+</html>
